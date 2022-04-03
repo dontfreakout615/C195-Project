@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="441.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointment">
+   <children>
+      <ImageView fitHeight="509.0" fitWidth="440.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@gray%20scale%20bubble_uncopyrighted_350-400.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="34.0" layoutY="28.0" prefHeight="444.0" prefWidth="371.0" style="-fx-background-color: bebebe; -fx-opacity: 0.6; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="New Appointment">
+               <font>
+                  <Font name="Corbel Light" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancelButtonAA" layoutX="58.0" layoutY="400.0" mnemonicParsing="false" onAction="#toAppointmentsScreen" style="-fx-background-radius: 30;" text="Cancel">
+               <font>
+                  <Font name="Corbel Light" size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="235.0" layoutY="400.0" mnemonicParsing="false" style="-fx-background-radius: 30;" text="Save">
+               <font>
+                  <Font name="Corbel Light" size="16.0" />
+               </font></Button>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="575.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Appointments">
+    <children>
+        <ImageView fitHeight="475.0" fitWidth="575.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@gray%20scale%20bubble_uncopyrighted_wide.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="49.0" layoutY="50.0" prefHeight="375.0" prefWidth="475.0" style="-fx-background-color: bebebe; -fx-opacity: 0.6; -fx-background-radius: 30;">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="Appointments">
+                    <font>
+                        <Font name="Corbel Light" size="35.0" />
+                    </font></Label>
+                <Button fx:id="addAppointments" layoutX="27.0" layoutY="317.0" mnemonicParsing="false" onAction="#toAddAppointmentScreen" style="-fx-background-radius: 50;" text="Add">
+                    <font>
+                        <Font name="Corbel Light" size="16.0" />
+                    </font></Button>
+                <Button fx:id="editAppointments" layoutX="82.0" layoutY="317.0" mnemonicParsing="false" onAction="#toEditAppointmentScreen" style="-fx-background-radius: 50;" text="Edit">
+                    <font>
+                        <Font name="Corbel Light" size="16.0" />
+                    </font></Button>
+                <Button layoutX="140.0" layoutY="317.0" mnemonicParsing="false" style="-fx-background-radius: 50;" text="Delete">
+                    <font>
+                        <Font name="Corbel Light" size="16.0" />
+                    </font></Button>
+                <TableView layoutX="27.0" layoutY="62.0" prefHeight="245.0" prefWidth="421.0" style="-fx-background-radius: 30;">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="C1" />
+                        <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                </TableView>
+                <Button fx:id="cancelButtonAS" layoutX="382.0" layoutY="317.0" mnemonicParsing="false" onAction="#toCustomersScreen" style="-fx-background-radius: 50;" text="Cancel">
+                    <font>
+                        <Font name="Corbel Light" size="16.0" />
+                    </font>
+                </Button>
+            </children></AnchorPane>
+    </children>
+
+</AnchorPane>
